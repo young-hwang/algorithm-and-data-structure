@@ -27,10 +27,19 @@ public class StringCalculator {
     private int[] toInts(String[] tokenizer) {
         int[] numbers = new int[tokenizer.length];
         for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = Integer.parseInt(tokenizer[i]);
+            numbers[i] = toPositive(tokenizer[i]);
         }
         return numbers;
     }
+
+    private static int toPositive(String tokenizer) {
+         int number = Integer.parseInt(tokenizer);
+         if (number < 0) {
+             throw new RuntimeException();
+         }
+         return number;
+    }
+
 
     private int getSum(int[] numbers) {
         int sum = 0;

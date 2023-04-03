@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class StringCalculatorTest {
 
@@ -37,5 +38,15 @@ class StringCalculatorTest {
         // when
         // then
         assertThat(stringCalculator.add("1,2")).isEqualTo(3);
+    }
+
+    @Test
+    void add_negative() {
+        // given
+        // when
+        // then
+        assertThrows(RuntimeException.class, () -> {
+            stringCalculator.add("-1,2,3");
+        });
     }
 }
