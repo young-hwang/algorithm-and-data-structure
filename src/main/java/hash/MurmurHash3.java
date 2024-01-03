@@ -14,8 +14,9 @@ public class MurmurHash3 {
     }
 
     private int hash(String key) {
-        return 316307400;
+        return 0;
     }
+
 
     private int hash(String key, int seed, boolean signed) {
         return 0;
