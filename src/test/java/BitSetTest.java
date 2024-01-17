@@ -29,8 +29,10 @@ public class BitSetTest {
 
         // when
         bitSet.set(10);
+        bitSet.set(Integer.MAX_VALUE);
 
         // then
         assertThat(bitSet.get(10)).isEqualTo(true);
+        assertThat(bitSet.get(Integer.MAX_VALUE)).isEqualTo(true);
     }
 }
