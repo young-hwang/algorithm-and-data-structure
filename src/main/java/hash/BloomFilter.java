@@ -43,10 +43,10 @@ public class BloomFilter {
     }
 
     public void add(String key) {
+        MurmurHash3_32 hash = new MurmurHash3_32();
         for (int i = 0; i < this.hashCount; i++) {
-            int hash = 0;
-//            int hash = HashUtil.hash(key, i);
-            this.bitSet.set(hash, true);
+//            int hash = 0;
+            this.bitSet.set(0, true);
         }
     }
 }
