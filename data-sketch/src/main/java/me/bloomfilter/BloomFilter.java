@@ -1,4 +1,6 @@
-package hash;
+package me.bloomfilter;
+
+import me.hash.MurmurHash3_32;
 
 import java.util.BitSet;
 

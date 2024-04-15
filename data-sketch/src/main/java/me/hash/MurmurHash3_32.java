@@ -1,4 +1,4 @@
-package hash;
+package me.hash;
 
 public final class MurmurHash3_32 {
     private final int c1 = 0xcc9e2d51;

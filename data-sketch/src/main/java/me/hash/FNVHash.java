@@ -1,6 +1,4 @@
-package hash;
-
-import java.io.Console;
+package me.hash;
 
 // Fowler-Noll-Vo(FNV)
 // 해시 함수 중 하나로 간단하면서도 효과적인 비암호화 해시 함수이다.
