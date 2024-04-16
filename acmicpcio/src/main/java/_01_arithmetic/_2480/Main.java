@@ -1,4 +1,4 @@
-package _03_mathematics._2480;
+package _01_arithmetic._2480;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
