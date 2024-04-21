@@ -1,10 +1,9 @@
-package _28_data_structure._10816;
+package _28_map._10816;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
